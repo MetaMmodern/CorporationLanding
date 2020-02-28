@@ -67,7 +67,19 @@ html {
   background: #f6f5f3;
   min-height: 100vh;
 }
+/* .block-3 {
+  min-height: 75vh;
+} */
 
+.block-4 {
+  background: url(../images/Group4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.swiper-container {
+  width: 100%;
+}
 /*Малые девайсы («ландшафтные телефоны», >= 576px)*/
 @media (min-width: 576px) {
 }

@@ -20,6 +20,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/styles/index.css" />
+
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <title>Corporation</title>
   </head>
   <body>
@@ -71,13 +78,15 @@
       </div>
     </div>
     <div
-      class="container-fluid block-2 d-flex flex-column justify-content-center"
+      class="container-fluid block-2 d-flex flex-column justify-content-center pt-3 pt-md-0"
     >
       <div class="row text-center">
         <div class="col-12  custom-card-title">New Features</div>
-        <div class="col-12 custom-card-subtitle">Some awesome features</div>
+        <div class="col-12 custom-card-subtitle mb-3">
+          Some awesome features
+        </div>
       </div>
-      <div class="row justify-content-between">
+      <div class="row justify-content-between pr-md-4 pl-md-4">
         <div class="col-6 col-md-4 col-lg-3">
           <div class="card w-100 bg-transparent border-0 text-center ">
             <img
@@ -85,7 +94,7 @@
               class="card-img-top w-25 mx-auto"
               alt="..."
             />
-            <div class="card-body">
+            <div class="card-body pl-0 pr-0">
               <h5 class="card-title">Название карточки</h5>
               <p class="card-text text-muted">
                 Some quick example text to build on the card title and make up
@@ -101,7 +110,7 @@
               class="card-img-top w-25 mx-auto"
               alt="..."
             />
-            <div class="card-body">
+            <div class="card-body pl-0 pr-0">
               <h5 class="card-title">Название карточки</h5>
               <p class="card-text text-muted">
                 Some quick example text to build on the card title and make up
@@ -117,7 +126,7 @@
               class="card-img-top w-25 mx-auto"
               alt="..."
             />
-            <div class="card-body">
+            <div class="card-body pl-0 pr-0">
               <h5 class="card-title">Название карточки</h5>
               <p class="card-text text-muted">
                 Some quick example text to build on the card title and make up
@@ -133,7 +142,7 @@
               class="card-img-top w-25 mx-auto"
               alt="..."
             />
-            <div class="card-body">
+            <div class="card-body pr-0 pl-0">
               <h5 class="card-title">Название карточки</h5>
               <p class="card-text text-muted">
                 Some quick example text to build on the card title and make up
@@ -144,8 +153,212 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid block-3"></div>
-    <div class="container-fluid block-4"></div>
+    <div class="container-fluid block-3 h-75">
+      <div class="row h-100">
+        <div class="col-6 my-auto d-none d-md-block">
+          <img src="./assets/images/macbook.png" alt="" class="w-100" />
+        </div>
+
+        <div class="col-12 col-md-5 my-auto">
+          <div class="card border-0">
+            <div class="card-body">
+              <h5 class="card-title custom-card-title">Use design</h5>
+              <h6 class="card-subtitle custom-card-subtitle mb-3">
+                Resposive design, just need your tap
+              </h6>
+              <p class="card-text text-muted custom-card-text">
+                Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                venenatis vestibulum. Donec id elit non mi porta gravida at eget
+                metus. Curabitur blandit tempus porttitor. Etiam porta sem
+                malesuada magna mollis euismod. Vestibulum id ligula porta felis
+                euismod semper. Donec sed odio dui.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid block-4 h-75">
+      <div class="h-100 d-flex flex-column justify-content-center mx-auto">
+        <!-- Slider main container -->
+        <div class="swiper-container text-white pt-3 d-flex d-md-none">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="card w-100 bg-transparent border-0 text-center ">
+                <img
+                  src="./assets/images/creators/bogdan.jpg"
+                  class="card-img-top w-25 mx-auto"
+                  alt="..."
+                />
+                <div class="card-body pl-0 pr-0">
+                  <h5 class="card-title text-white mb-3">bog_dan</h5>
+                  <h6
+                    class="card-subtitle mb-2 custom-card-title text-lowercase text-capitalize"
+                  >
+                    Cool man
+                  </h6>
+                  <p class="card-text text-muted">
+                    “Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                    venenatis vestibulum. Donec id gravida at eget metus.
+                    Etiasem malesuada magn”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card w-100 bg-transparent border-0 text-center ">
+                <img
+                  src="./assets/images/creators/chak.jpg"
+                  class="card-img-top w-25 mx-auto"
+                  alt="..."
+                />
+                <div class="card-body pl-0 pr-0">
+                  <h5 class="card-title text-white mb-3">Chakaramba</h5>
+                  <h6
+                    class="card-subtitle mb-2 custom-card-title text-lowercase text-capitalize"
+                  >
+                    Backend-dev
+                  </h6>
+                  <p class="card-text text-muted">
+                    “Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                    venenatis vestibulum. Donec id gravida at eget metus.
+                    Etiasem malesuada magn”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card w-100 bg-transparent border-0 text-center ">
+                <img
+                  src="./assets/images/creators/meta.jpg"
+                  class="card-img-top w-25 mx-auto"
+                  alt="..."
+                />
+                <div class="card-body pl-0 pr-0">
+                  <h5 class="card-title text-white mb-3">metamodern</h5>
+                  <h6
+                    class="card-subtitle mb-2 custom-card-title text-lowercase text-capitalize"
+                  >
+                    Designer
+                  </h6>
+                  <p class="card-text text-muted">
+                    “Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                    venenatis vestibulum. Donec id gravida at eget metus.
+                    Etiasem malesuada magn”
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div
+          class="row align-items-center justify-content-between ml-2 mr-2 d-none d-md-flex"
+        >
+          <div class="col-3">
+            <div class="card w-100 bg-transparent border-0 text-center ">
+              <img
+                src="./assets/images/creators/bogdan.jpg"
+                class="card-img-top w-25 mx-auto"
+                alt="..."
+              />
+              <div class="card-body pl-0 pr-0">
+                <h5 class="card-title text-white mb-3">bog_dan</h5>
+                <h6
+                  class="card-subtitle mb-2 custom-card-title text-lowercase text-capitalize"
+                >
+                  Cool man
+                </h6>
+                <p class="card-text text-muted">
+                  “Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                  venenatis vestibulum. Donec id gravida at eget metus. Etiasem
+                  malesuada magn”
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card w-100 bg-transparent border-0 text-center ">
+              <img
+                src="./assets/images/creators/chak.jpg"
+                class="card-img-top w-25 mx-auto"
+                alt="..."
+              />
+              <div class="card-body pl-0 pr-0">
+                <h5 class="card-title text-white mb-3">Chakaramba</h5>
+                <h6
+                  class="card-subtitle mb-2 custom-card-title text-lowercase text-capitalize"
+                >
+                  Backend-dev
+                </h6>
+                <p class="card-text text-muted">
+                  “Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                  venenatis vestibulum. Donec id gravida at eget metus. Etiasem
+                  malesuada magn”
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card w-100 bg-transparent border-0 text-center ">
+              <img
+                src="./assets/images/creators/meta.jpg"
+                class="card-img-top w-25 mx-auto"
+                alt="..."
+              />
+              <div class="card-body pl-0 pr-0">
+                <h5 class="card-title text-white mb-3">metamodern</h5>
+                <h6
+                  class="card-subtitle mb-2 custom-card-title text-lowercase text-capitalize"
+                >
+                  Designer
+                </h6>
+                <p class="card-text text-muted">
+                  “Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                  venenatis vestibulum. Donec id gravida at eget metus. Etiasem
+                  malesuada magn”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-between align-items-center ml-2 mr-2 d-none">
+          <div class="col-1">
+            <img src="./assets/images/partners/1.png" alt="" class="w-100" />
+          </div>
+          <div class="col-1">
+            <img src="./assets/images/partners/2.png" alt="" class="w-100" />
+          </div>
+          <div class="col-1">
+            <img src="./assets/images/partners/3.png" alt="" class="w-100" />
+          </div>
+          <div class="col-1">
+            <img src="./assets/images/partners/4.png" alt="" class="w-100" />
+          </div>
+          <div class="col-1">
+            <img src="./assets/images/partners/5.png" alt="" class="w-100" />
+          </div>
+        </div>
+        <div class="sponsors-swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide w-25">
+              <img src="./assets/images/partners/1.png" alt="" class="w-100" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/partners/2.png" alt="" class="w-100" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/partners/3.png" alt="" class="w-100" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container-fluid block-5"></div>
     <div class="container-fluid block-6"></div>
     <div class="container-fluid footer"></div>
@@ -164,5 +377,29 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(document).ready(function() {
+        //initialize swiper when document ready
+        var mySwiper = new Swiper(".swiper-container", {
+          // Optional parameters
+          loop: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            hideOnClick: true
+          },
+          autoplay: {
+            delay: 5000
+          }
+        });
+        var secondSwiper = new Swiper(".sponsors-swiper", {
+          // Optional parameters
+          loop: true,
+          autoplay: {
+              delay: 0
+            }
+        });
+      });
+    </script>
   </body>
 </html>
