@@ -94,6 +94,9 @@ html {
   .intro > div {
     font-size: 3rem;
   }
+  .block-3 {
+    height: 75%;
+  }
 }
 
 /*Большие девайсы (десктопы, >= 992px)*/
