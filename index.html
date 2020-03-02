@@ -178,13 +178,11 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid block-4 h-75">
+    <div class="container-fluid block-4 pt-5 pb-5">
       <div class="h-100 d-flex flex-column justify-content-center mx-auto">
         <!-- Slider main container -->
-        <div class="swiper-container text-white pt-3 d-flex d-md-none">
-          <!-- Additional required wrapper -->
+        <div class="swiper-container s1 text-white pt-3 d-flex d-md-none">
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">
               <div class="card w-100 bg-transparent border-0 text-center ">
                 <img
@@ -255,6 +253,7 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
+
         <div
           class="row align-items-center justify-content-between ml-2 mr-2 d-none d-md-flex"
         >
@@ -325,35 +324,32 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-between align-items-center ml-2 mr-2 d-none">
-          <div class="col-1">
-            <img src="./assets/images/partners/1.png" alt="" class="w-100" />
-          </div>
-          <div class="col-1">
-            <img src="./assets/images/partners/2.png" alt="" class="w-100" />
-          </div>
-          <div class="col-1">
-            <img src="./assets/images/partners/3.png" alt="" class="w-100" />
-          </div>
-          <div class="col-1">
-            <img src="./assets/images/partners/4.png" alt="" class="w-100" />
-          </div>
-          <div class="col-1">
-            <img src="./assets/images/partners/5.png" alt="" class="w-100" />
-          </div>
-        </div>
-        <div class="sponsors-swiper">
-          <!-- Additional required wrapper -->
+        <div class="swiper-container s2 pt-3 d-flex mx-auto">
           <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide w-25">
-              <img src="./assets/images/partners/1.png" alt="" class="w-100" />
+            <div
+              class="swiper-slide d-flex align-items-center justify-content-center mt-auto mb-auto"
+            >
+              <img src="./assets/images/partners/1.png" alt="" />
             </div>
-            <div class="swiper-slide">
-              <img src="./assets/images/partners/2.png" alt="" class="w-100" />
+            <div
+              class="swiper-slide d-flex align-items-center justify-content-center mt-auto mb-auto"
+            >
+              <img src="./assets/images/partners/2.png" alt="" />
             </div>
-            <div class="swiper-slide">
-              <img src="./assets/images/partners/3.png" alt="" class="w-100" />
+            <div
+              class="swiper-slide d-flex align-items-center justify-content-center mt-auto mb-auto"
+            >
+              <img src="./assets/images/partners/3.png" alt="" />
+            </div>
+            <div
+              class="swiper-slide d-flex align-items-center justify-content-center mt-auto mb-auto"
+            >
+              <img src="./assets/images/partners/4.png" alt="" />
+            </div>
+            <div
+              class="swiper-slide d-flex align-items-center justify-content-center mt-auto mb-auto"
+            >
+              <img src="./assets/images/partners/5.png" alt="" />
             </div>
           </div>
         </div>
@@ -380,7 +376,7 @@
     <script>
       $(document).ready(function() {
         //initialize swiper when document ready
-        var mySwiper = new Swiper(".swiper-container", {
+        var mySwiper = new Swiper(".s1", {
           // Optional parameters
           loop: true,
           navigation: {
@@ -392,13 +388,34 @@
             delay: 5000
           }
         });
-        var secondSwiper = new Swiper(".sponsors-swiper", {
-          // Optional parameters
-          loop: true,
-          autoplay: {
-              delay: 0
-            }
-        });
+        var width = $(window).width();
+        if (width >= 576) {
+          var secondSwiper = new Swiper(".s2", {
+            // Optional parameters
+            allowTouchMove: false,
+            loop: true,
+            loopedSlides: 5,
+            slidesPerView: 5,
+            spaceBetween: 100,
+            autoplay: {
+              delay: 1
+            },
+            speed: 4000
+          });
+        } else {
+          var secondSwiper = new Swiper(".s2", {
+            // Optional parameters
+            allowTouchMove: false,
+            loop: true,
+            loopedSlides: 5,
+            slidesPerView: 3,
+            spaceBetween: 100,
+            autoplay: {
+              delay: 1
+            },
+            speed: 2000
+          });
+        }
       });
     </script>
   </body>

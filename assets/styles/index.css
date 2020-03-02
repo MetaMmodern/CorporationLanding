@@ -80,6 +80,11 @@ html {
 .swiper-container {
   width: 100%;
 }
+.s2 > .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
 /*Малые девайсы («ландшафтные телефоны», >= 576px)*/
 @media (min-width: 576px) {
 }
