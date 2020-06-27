@@ -4,6 +4,7 @@ html {
   height: 100%;
   font-family: "Exo", sans-serif;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 .intro {
   background-image: url(../images/back.jpg);
@@ -67,9 +68,6 @@ html {
   background: #f6f5f3;
   min-height: 100vh;
 }
-/* .block-3 {
-  min-height: 75vh;
-} */
 
 .block-4 {
   background: url(../images/Group4.jpg);
@@ -77,6 +75,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .swiper-container {
   width: 100%;
 }
@@ -85,6 +84,99 @@ html {
   -o-transition-timing-function: linear !important;
   transition-timing-function: linear !important;
 }
+
+.block-5 {
+  background-color: #f6f5f3;
+  padding-top: 3rem;
+  position: relative;
+}
+
+.block-6 {
+  background-color: #323969;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.terms {
+  color: #fff;
+  opacity: 0.6;
+}
+.terms a {
+  color: #fff;
+}
+
+.safari-cotainer {
+  display: flex;
+  top: 0;
+}
+.safari-back {
+  position: absolute;
+  left: calc(50%);
+  transform: translateX(calc(-50%));
+  right: calc(50%);
+  top: 14.13333%;
+  padding-left: calc(15px + 3.04878%);
+  padding-right: calc(15px + 3.04878%);
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+form input {
+  min-height: 50px;
+  border: 1px solid #999cb4;
+  background: #ffffff1a;
+  border-radius: 2px;
+  font-size: 1rem;
+  color: #f6f5f3;
+  padding: 0.3rem 1rem;
+  width: 100%;
+  transition: outline 0.2s linear;
+  box-sizing: border-box;
+}
+form input:focus {
+  outline: 2px solid #4355c9;
+}
+form input:focus::placeholder {
+  color: #838cc7;
+}
+form > .form-row {
+  width: 100%;
+}
+
+input::placeholder {
+  color: #ffffff80;
+  transition: color 0.2s linear;
+}
+
+.footer {
+  padding: 3rem 1rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s linear;
+}
+.footer a:hover {
+  text-decoration: none;
+  color: #ff4e4e;
+}
+.footer input::placeholder {
+  color: #999cb4;
+}
+
+.footer h4 {
+  margin-bottom: 1.2rem;
+}
+
+.footer-logo:after {
+  content: url("../images/Logo2.png");
+  position: absolute;
+  top: -5.5%;
+}
+
 /*Малые девайсы («ландшафтные телефоны», >= 576px)*/
 @media (min-width: 576px) {
 }
@@ -96,6 +188,12 @@ html {
   }
   .block-3 {
     height: 75%;
+  }
+  .block-5 {
+    height: 100vh;
+  }
+  .footer {
+    padding: 4rem 5rem;
   }
 }
 
@@ -109,6 +207,9 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+  form > .form-row {
+    width: 80%;
   }
 }
 
